@@ -9,7 +9,8 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" class="absolute bg-light dark:bg-stone-950 dark:text-white"  >
+<!-- <html lang="en" class="absolute bg-light dark:bg-stone-950 dark:text-white"  > -->
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -18,23 +19,34 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
-		<div>
-
+	<body >
+		<div class="flex bg-special h-screen justify-center ">
+			<div class="flex-col w-2/3">
+				<div class="h-12 ">
+					<h1 class="text-6xl font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent text-center">Welcome</h1>
+				</div>
+				<div class=" mt-8 h-20 flex border-2 rounded-2xl bg-white ">
+	
+				</div>
+			</div>
 		</div>
-		<Navbar>
-			
-		</Navbar>
-
-		<DataCard title='Hola soy una tarjeta' body='Soy un body' footer='Soy un footer'>
-
-		</DataCard>
-
-
 	</body>
 </html>
 <style is:global>
 
+
+
+
+.bg-special{
+background-color: #000000;
+/* background-image: url("https://www.transparenttextures.com/patterns/tex2res5.png"); */
+/* background-image: url("https://www.transparenttextures.com/patterns/fabric-of-squares.png"); */
+background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+}
+
+
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
 	/* html{
 		background-color: #1f1f1f;
